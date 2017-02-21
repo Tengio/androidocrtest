@@ -10,4 +10,5 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="take_a_photo">Take a photo</string>
 </resources>

@@ -8,10 +8,28 @@
     android:orientation="horizontal"
     android:id="@+id/activity_main">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/take_photo"
-        android:onClick="takePhoto" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/screen_background_light_transparent"
+            android:id="@+id/imageView"
+            android:layout_weight="1"
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:contentDescription="@string/take_photo"
+            android:adjustViewBounds="true" />
+
+        <Button
+            android:text="@string/take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_weight="0"
+            android:onClick="takePhoto"/>
+    </LinearLayout>
 </LinearLayout>
